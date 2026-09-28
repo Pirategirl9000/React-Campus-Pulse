@@ -5,24 +5,52 @@ import EventCard from "./components/EventCard.jsx";
 import ClubCard from "./components/ClubCard.jsx";
 
 export default function App() {
+
   const events = [
     {
       id: 1,
       title: "Robotics Demonstration",
       category: "Technology",
-      location: "Technology Center"
+      location: "Technology Center",
+      date: "October 4, 2026",
+      time: "5:00pm-6:00pm",
+      description: "Join us for a demonstration of the new search and rescue robot"
     },
     {
       id: 2,
       title: "Jazz Concert",
       category: "Music",
-      location: "Fine Arts Building"
+      location: "Fine Arts Building",
+      date: "September 30, 2026",
+      time: "3:00pm-6:00pm",
+      description: "Join Freddy and his friends in their jazz concert - free admissions"
     },
     {
       id: 3,
       title: "Student Coding Night",
       category: "Technology",
-      location: "Innovation Lab"
+      location: "Innovation Lab",
+      date: "October 7, 2026",
+      time: "5:00pm-6:30pm",
+      description: "Join ACM in their programming competition - any language allowed"
+    },
+    {
+      id: 4,
+      title: "Project Showcase",
+      category: "Technology",
+      location: "Gardner Hall 115",
+      date: "October 1, 2026",
+      time: "5:00pm-6:00pm",
+      description: "Join ACM in showcasing your projects and seeing what your peers are working on"
+    },
+    {
+      id: 5,
+      title: "Fermat's Last Thereom Watch-Along",
+      category: "Math",
+      location: "Carhart G05",
+      date: "October 8, 2026",
+      time: "5:00pm-7:00pm",
+      description: "Join the math club in discussing and watching a movie on Fermat's last theorem and it's eventual proof"  //https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem#:~:text=Cubum%20autem%20in,narrow%20to%20contain
     }
   ]
 
