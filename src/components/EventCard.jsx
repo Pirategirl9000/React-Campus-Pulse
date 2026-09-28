@@ -24,7 +24,7 @@ export default function EventCard({ event }) {
             <p className="event-desc">
                 {event.description}
             </p>
-            <button onClick={handleClick}>
+            <button onClick={handleClick} className="event-button">
                 View Event
             </button>
         </article>
