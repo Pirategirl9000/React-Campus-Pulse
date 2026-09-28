@@ -128,14 +128,19 @@ export default function App() {
     <main>
       <h2>Upcoming Events</h2>
       <section className="event-grid">
-          {events.sort((a, b) => alphabetCompare(a.title, b.title))
-          .map(event => <EventCard key={event.id} event={event}/>)}
+          {
+          events.sort((a, b) => alphabetCompare(a.title, b.title))  // Sort them by title ascending
+          .map(event => <EventCard key={event.id} event={event}/>)  // Map them to an eventCard
+          }
       </section>
 
 
       <h2>Campus Clubs</h2>
       <section className="club-grid">
-        {clubs.map(club => <ClubCard key={club.id} club={club}/>)}
+        {
+        clubs.sort((a, b) => alphabetCompare(a.name, b.name))       // Sort them by club name asc
+        .map(club => <ClubCard key={club.id} club={club}/>)          // Map them to club cards
+        }
       </section>
 
 
