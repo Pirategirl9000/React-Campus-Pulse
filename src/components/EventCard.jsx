@@ -5,14 +5,20 @@ export default function EventCard({ event }) {
 
     return (
         <article className="event-card">
-            <h2>
+            <h2 class-name="event-title">
                 {event.title}
             </h2>
-            <p>
+            <p class-name="event-category">
                 Category: {event.category}
             </p>
-            <p>
+            <p className="event-location">
                 Location: {event.location}
+            </p>
+            <p className="event-date-time">
+                {event.date} : {event.time}
+            </p>
+            <p className="event-desc">
+                {event.description}
             </p>
             <button onClick={handleClick}>
                 View Event
