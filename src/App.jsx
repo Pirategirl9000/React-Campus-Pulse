@@ -102,6 +102,25 @@ export default function App() {
     }
   ]
 
+  /**
+   * Compares two valuues and returns a number indicating which is first alphabetically (based on Arrays.sort())
+   * @param {String} a 
+   * @param {String} b 
+   * @returns Number for use in Array.sort() method
+   */
+  function alphabetCompare(a, b) {
+    if (a === b) return 0;
+
+    for (let i = 0; i < a.length, i < b.length; i++) {
+      if (a.charCodeAt(i) > b.charCodeAt(i)) return 1;  // b comes first
+      else if (a.charCodeAt(i) < b.charCodeAt(i)) return -1  // a comes first
+
+      // They are equal so we need to do another iteration
+    }
+
+    return (a.length > b.length) ? 1 : -1;  // Return which ever string is shorter
+  }
+
   return (
     <>
     <Header />
@@ -109,7 +128,8 @@ export default function App() {
     <main>
       <h2>Upcoming Events</h2>
       <section className="event-grid">
-          {events.map(event => <EventCard key={event.id} event={event}/>)}
+          {events.sort((a, b) => alphabetCompare(a.title, b.title))
+          .map(event => <EventCard key={event.id} event={event}/>)}
       </section>
 
 
