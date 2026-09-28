@@ -126,7 +126,7 @@ export default function App() {
     <Header />
 
     <main>
-      <h2>Upcoming Events</h2>
+      <h2 id="events-header">Upcoming Events</h2>
       <section className="event-grid">
           {
           events.sort((a, b) => alphabetCompare(a.title, b.title))  // Sort them by title ascending
@@ -135,7 +135,7 @@ export default function App() {
       </section>
 
 
-      <h2>Campus Clubs</h2>
+      <h2 id="clubs-header">Campus Clubs</h2>
       <section className="club-grid">
         {
         clubs.sort((a, b) => alphabetCompare(a.name, b.name))       // Sort them by club name asc

@@ -5,6 +5,10 @@
   gap: 20px;
 }
 
+#clubs-header, #events-header {
+  padding: 1em 0;
+}
+
 .event-card, .club-card {
   padding: 20px;
   border: 1px solid #ddd;
@@ -13,4 +17,38 @@
 
 .site-footer {
   padding: 2em;
+}
+
+#site-name-and-nav {
+  background: rgb(231, 179, 5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+#site-name {
+  color: black;
+  padding-left: 0.5em;
+  padding-right: 0;
+  margin-right: 0;
+}
+
+nav {
+  background: black;
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  background: inherit;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+  font-size: 1.4em;
+  color: rgb(119, 139, 226);
+}
+
+#site-slogan {
+  text-align: left;
+  padding-left: 2em;
 }
