@@ -1,6 +1,10 @@
 export default function EventCard({ event }) {
     function handleClick() {
-        alert(event.title);
+        alert(`${event.title} \n
+             Type: ${event.category} \n
+             Date: ${event.date} \n
+             Time: ${event.time} \n
+             Description: ${event.description}`);
     }
 
     return (
