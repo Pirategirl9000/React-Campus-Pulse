@@ -14,7 +14,7 @@ export default function ClubCard( {club} ) {
             <p className="club-meetings">Meetings: {club.meeting}</p>
             <p className="club-location">Location: {club.location}</p>
             <p className="club-description"> {club.description} </p>
-            <button className="club-button" onClick={handleClick}>View Club</button>
+            <button className="club-button" onClick={handleClick}>Learn More</button>
         </article>
     )
 }
