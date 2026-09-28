@@ -1,5 +1,6 @@
 import './App.css';
 import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
 import EventCard from "./components/EventCard.jsx";
 import ClubCard from "./components/ClubCard.jsx";
 
@@ -50,19 +51,21 @@ export default function App() {
     <Header />
 
     <main>
-      <h1>Events</h1>
+      <h2>Upcoming Events</h2>
       <section className="event-grid">
           {events.map(event => <EventCard key={event.id} event={event}/>)}
       </section>
 
 
-      <h1>Clubs</h1>
+      <h2>Campus Clubs</h2>
       <section className="club-grid">
         {clubs.map(club => <ClubCard key={club.id} club={club}/>)}
       </section>
 
 
     </main>
+
+    <Footer />
 
     </>
   );
