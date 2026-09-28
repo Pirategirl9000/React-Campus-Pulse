@@ -58,19 +58,47 @@ export default function App() {
     {
       id: 1,
       name: "Cybersecurity Club",
-      category: "Technology"
+      category: "Technology",
+      meeting: "4:00pm-5:00pm Wednesdays",
+      location: "CAT 207",
+      description: "Connect with other cybersecurity students and develop a deeper understanding of the topic"
     },
 
     {
       id: 2,
       name: "Photography Club",
-      category: "Arts"
+      category: "Arts",
+      meeting: "7:00pm-8:00pm Wednesdays",
+      location: "Peterson Fine Arts RM 011",
+      description: "Join other students in learning new photography techniques"
     },
 
     {
       id: 3,
       name: "Running Club",
-      category: "Athletics"
+      category: "Athletics",
+      meeting: "4:00pm-5:00pm Fridays",
+      location: "Kanter Student Center Lobby",
+      description: "Get together with other runners and joggers to enjoy the outdoors"
+    },
+
+    // When you can't write psuedodata just steal if from someone else (https://www.wsc.edu/directory/37/a-to-z/A)
+    {
+      id: 4,
+      name: "Chess Club",
+      category: "Recreation",
+      meeting: "7:00pm-8:00pm Wednesdays",
+      location: "Humanities Lounge",
+      description: "Join other chess players and compete to get better at chess"
+    },
+
+    {
+      id: 5,
+      name: "Film Club",
+      category: "Arts",
+      meeting: "7:00pm-8:00pm Mondays",
+      location: "Humanities Rm 408",
+      description: "Join other film enthusiasts in watching and discussing various films"
     }
   ]
 
