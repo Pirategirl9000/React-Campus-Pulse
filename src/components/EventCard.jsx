@@ -1,4 +1,17 @@
+/**
+ * React Component that creates a card for a given event prop
+ * @param {Object} event The event object containing all the info for displaying on the card
+ * @param {String} event.title The title of the event
+ * @param {String} event.category The category of the event
+ * @param {String} event.date The date the event takes place MONTH_NAME DD, YYYY
+ * @param {String} event.time The time the event takes place HH:MM(pm|am)-HH:MM(pm|am)
+ * @param {String} event.description The description for this event
+ * @returns {React.JSX.Component} EventCard React component
+ */
 export default function EventCard({ event }) {
+    /**
+     * Handles clicks for the View Event button by displaying info about the event in an alert message
+     */
     function handleClick() {
         alert(`${event.title} \n
              Type: ${event.category} \n

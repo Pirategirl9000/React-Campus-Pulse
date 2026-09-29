@@ -1,4 +1,17 @@
+/**
+ * Returns a React component for a card element containing information about a club object
+ * @param {Object} club The club object containing the listed properties
+ * @param {String} club.name The name of the club
+ * @param {String} club.category The category of the club
+ * @param {String} club.meeting The meeting time and days of the week for the club MONTH_NAME DD, YYYY : START_TIMEpm|am-END_TIMEpm|am
+ * @param {String} club.location The location of club meetings
+ * @param {String} club.description The description of the club 
+ * @returns {React.JSX.Component} ClubCard React component
+ */
 export default function ClubCard( {club} ) {
+    /**
+     * Handles click of the learn more button by displaying info about the club
+     */
     function handleClick() {
             alert(`${club.name} \n
              Type: ${club.category} \n

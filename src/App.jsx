@@ -4,6 +4,10 @@ import Footer from "./components/Footer.jsx";
 import EventCard from "./components/EventCard.jsx";
 import ClubCard from "./components/ClubCard.jsx";
 
+/**
+ * A React Component that contains all the info about the page
+ * @returns A parent component to all components of the webpage
+ */
 export default function App() {
 
   const events = [

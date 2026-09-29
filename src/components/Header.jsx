@@ -1,3 +1,7 @@
+/**
+ * The header component for the page
+ * @returns {React.JSX.Component} Header React Component
+ */
 export default function Header() {
     return (
         <header className="site-header">
