@@ -128,7 +128,7 @@ export default function App() {
     <Header />
 
     <main>
-      <h2 id="events-header">Upcoming Events</h2>
+      <h2 id="events" className="events-header">Upcoming Events</h2>
       <p id="events-subheader">There {(multipleEvents) ? "are" : "is"} {events.length} upcoming {(multipleEvents) ? "events" : "event"}</p>
       <section className="event-grid">
           {
@@ -138,7 +138,7 @@ export default function App() {
       </section>
 
 
-      <h2 id="clubs-header">Campus Clubs</h2>
+      <h2 id="clubs" className="clubs-header">Campus Clubs</h2>
       <p id="clubs-subheader">{(clubs.length > 1) ? "Join one of our many clubs and get involved on campus" : "Join our club or start one of your own"}</p>
       <section className="club-grid">
         {

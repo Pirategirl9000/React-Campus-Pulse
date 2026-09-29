@@ -5,7 +5,7 @@
   gap: 20px;
 }
 
-#clubs-header, #events-header {
+.clubs-header, .events-header {
   padding-top: 1em;;
 }
 
