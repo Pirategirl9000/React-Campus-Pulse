@@ -5,12 +5,8 @@
   gap: 20px;
 }
 
-.clubs-header, .events-header {
-  padding-top: 1em;;
-}
-
-#events-subheader, #clubs-subheader {
-  padding-bottom: 1em;
+.section-heading {
+  padding: 1em 0;
 }
 
 .event-card, .club-card {

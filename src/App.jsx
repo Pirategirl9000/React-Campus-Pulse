@@ -132,8 +132,12 @@ export default function App() {
     <Header />
 
     <main>
-      <h2 id="events" className="events-header">Upcoming Events</h2>
-      <p id="events-subheader">There {(multipleEvents) ? "are" : "is"} {events.length} upcoming {(multipleEvents) ? "events" : "event"}</p>
+
+      <div className="section-heading">
+        <h2 id="events" className="events-header">Upcoming Events</h2>
+        <p id="events-subheader">There {(multipleEvents) ? "are" : "is"} {events.length} upcoming {(multipleEvents) ? "events" : "event"}</p>
+      </div>
+
       <section className="event-grid">
           {
           events.sort((a, b) => alphabetCompare(a.title, b.title))  // Sort them by title ascending
@@ -142,8 +146,11 @@ export default function App() {
       </section>
 
 
-      <h2 id="clubs" className="clubs-header">Campus Clubs</h2>
-      <p id="clubs-subheader">{(clubs.length > 1) ? "Join one of our many clubs and get involved on campus" : "Join our club or start one of your own"}</p>
+      <div className="section-heading">
+        <h2 id="clubs" className="clubs-header">Campus Clubs</h2>
+        <p id="clubs-subheader">{(clubs.length > 1) ? "Join one of our many clubs and get involved on campus" : "Join our club or start one of your own"}</p>
+      </div>
+      
       <section className="club-grid">
         {
         clubs.sort((a, b) => alphabetCompare(a.name, b.name))       // Sort them by club name asc
