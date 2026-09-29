@@ -1,24 +1,3 @@
-.event-grid, .club-grid {
-  display: grid;
-  grid-template-columns:
-    repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.section-heading {
-  padding: 1em 0;
-}
-
-.event-card, .club-card {
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-}
-
-.site-footer {
-  padding: 2em;
-}
-
 #site-name-and-nav {
   background: rgb(231, 179, 5);
   display: flex;
@@ -48,7 +27,48 @@ nav a {
   color: rgb(119, 139, 226);
 }
 
+.content-section {
+  background: rgb(236, 236, 236);
+  color: black;
+}
+
+h2 {
+  color: black;
+}
+
+.event-grid, .club-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.event-grid button, .club-grid button {
+  background: rgb(37, 37, 37);
+  border-radius: 1em;
+}
+
+.section-heading {
+  padding: 1em 0;
+}
+
 #site-slogan {
+  color: white;;
+  background: inherit;
   text-align: left;
   padding-left: 2em;
+}
+
+.event-card, .club-card {
+  padding: 20px;
+  border: 1px solid black;;
+  border-radius: 10px;
+}
+
+.site-footer {
+  padding: 0.4em;
+  font-weight: bold;
+  color: black;
+  background: rgb(231, 179, 5);
+  border: 3px solid black;
 }
