@@ -121,12 +121,15 @@ export default function App() {
     return (a.length > b.length) ? 1 : -1;  // Return which ever string is shorter
   }
 
+  const multipleEvents = events.length > 1;
+
   return (
     <>
     <Header />
 
     <main>
       <h2 id="events-header">Upcoming Events</h2>
+      <p id="events-subheader">There {(multipleEvents) ? "are" : "is"} {events.length} upcoming {(multipleEvents) ? "events" : "event"}</p>
       <section className="event-grid">
           {
           events.sort((a, b) => alphabetCompare(a.title, b.title))  // Sort them by title ascending
@@ -136,6 +139,7 @@ export default function App() {
 
 
       <h2 id="clubs-header">Campus Clubs</h2>
+      <p id="clubs-subheader">{(clubs.length > 1) ? "Join one of our many clubs and get involved on campus" : "Join our club or start one of your own"}</p>
       <section className="club-grid">
         {
         clubs.sort((a, b) => alphabetCompare(a.name, b.name))       // Sort them by club name asc

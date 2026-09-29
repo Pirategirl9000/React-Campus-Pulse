@@ -6,7 +6,11 @@
 }
 
 #clubs-header, #events-header {
-  padding: 1em 0;
+  padding-top: 1em;;
+}
+
+#events-subheader, #clubs-subheader {
+  padding-bottom: 1em;
 }
 
 .event-card, .club-card {
