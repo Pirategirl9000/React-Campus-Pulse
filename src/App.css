@@ -8,6 +8,8 @@
 
 #site-name {
   color: black;
+  font-style: oblique;
+  font-weight: bold;
   padding-left: 0.5em;
   padding-right: 0;
   margin-right: 0;
@@ -17,6 +19,7 @@ nav {
   background: black;
   display: flex;
   align-items: center;
+  border-top: 5px solid rgb(231, 179, 5);
 }
 
 nav a {
@@ -41,6 +44,8 @@ h2 {
   grid-template-columns:
     repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
+  margin-bottom: 1em;
+  padding: 0 0.7em;
 }
 
 .event-grid button, .club-grid button {
@@ -55,8 +60,8 @@ h2 {
 #site-slogan {
   color: white;;
   background: inherit;
-  text-align: left;
-  padding-left: 2em;
+  text-align: center;
+  padding: 0.5em 0; 
 }
 
 .event-card, .club-card {
