@@ -22,10 +22,10 @@ export default function EventCard({ event }) {
 
     return (
         <article className="event-card">
-            <h2 class-name="event-title">
+            <h2 className="event-title">
                 {event.title}
             </h2>
-            <p class-name="event-category">
+            <p className="event-category">
                 Category: {event.category}
             </p>
             <p className="event-location">

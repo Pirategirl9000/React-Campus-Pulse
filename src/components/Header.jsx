@@ -10,7 +10,7 @@ export default function Header() {
                     Campus Pulse
                 </h1>
 
-                <nav>
+                <nav className="main-nav">
                     <a href="#">Home</a>
                     <a href="#events">Events</a>
                     <a href="#clubs">Clubs</a>
