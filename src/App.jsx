@@ -104,8 +104,8 @@ export default function App() {
 
   /**
    * Compares two valuues and returns a number indicating which is first alphabetically (based on Arrays.sort())
-   * @param {String} a 
-   * @param {String} b 
+   * @param {String} a the first element
+   * @param {String} b the second element
    * @returns Number for use in Array.sort() method
    */
   function alphabetCompare(a, b) {
